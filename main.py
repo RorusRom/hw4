@@ -22,7 +22,4 @@ class Robot(Anim, Car):
         Car.__init__(self, brand, model)
 
     def make_sound(self):
-        return "Beep boop"
-
-    def operate(self):
-        return "Performing tasks autonomously"
+        return "Bep bo"
