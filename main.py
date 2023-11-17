@@ -1,4 +1,4 @@
-class Animal:
+class Anim:
     def __init__(self, name, species):
         self.name = name
         self.species = species
@@ -7,7 +7,7 @@ class Animal:
         raise NotImplementedError("Subclasses must implement this method")
 
 
-class Machine:
+class Car:
     def __init__(self, brand, model):
         self.brand = brand
         self.model = model
@@ -16,10 +16,10 @@ class Machine:
         raise NotImplementedError("Subclasses must implement this method")
 
 
-class Robot(Animal, Machine):
+class Robot(Anim, Car):
     def __init__(self, name, species, brand, model):
-        Animal.__init__(self, name, species)
-        Machine.__init__(self, brand, model)
+        Anim.__init__(self, name, species)
+        Car.__init__(self, brand, model)
 
     def make_sound(self):
         return "Beep boop"
